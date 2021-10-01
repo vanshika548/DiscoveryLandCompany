@@ -1,0 +1,245 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+    background: black;
+}
+
+img{
+    width: 100%;
+    height: 420px;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.menu{
+    position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #fff;
+  }
+  
+  a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: top left
+  }
+  
+  a:hover::before {
+    transform: scaleX(1);
+  }
+
+.logo{
+    width: 15%;
+    height: 2px;
+    margin-left: 100px;
+}
+
+.gallery-text{
+    position: absolute;
+  top: 25%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 36px;
+  font-family: gt-sectra;
+}
+
+nav .menu{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 45px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+
+.item-container{
+    height: 400px;
+}
+
+.item-image{
+    /* width: 100%;
+    height: 100%; */
+    width: 100%;
+    height: 255px;
+}
+
+.name{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 60px;
+}
+
+footer{
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    background-color: #161f1e;
+}
+
+.fimg{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(336deg) brightness(101%);
+    margin-right: 20%;
+    height: 50px;
+    width: 50px;
+}
+
+.footer-list{
+    display: flex;
+    justify-content: center;
+}
+
+.list-1{
+    margin-left: 10%;
+}
+
+.list-2{
+    padding-left: 5%;
+}
+
+.list-3{
+    padding-left: 5%;
+}
+
+a{
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+.element{
+    margin-bottom: 20px;
+}
+
+.mail:link{
+    color: white;
+}
+
+.copyright{
+    color: white;
+    margin-left: 15%;
+    font-size: 15px;
+}
+
+.container{
+    display:none;
+}
+
+.bar1 {
+    width: 21px;
+    height: 2px;
+    background-color: #fff;
+}
+.bar2 {
+    width: 21px;
+    height: 2px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+.bar3 {
+    width: 16px;
+    height: 2px;
+    background-color: #fff;
+    margin: 4px 0;
+    transform: rotate(180deg);
+}
+
+/* I pad mini */
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+    .logo{
+        margin-left: 20px;
+    }
+
+    .menu{
+        padding: 10px;
+    }
+
+    .copyright{
+        margin: 10px;
+    }
+
+    .list-1{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+    /* iphone 11 pro */
+    .gallery-text{
+        font-size: 20px;
+        top: 35%;
+    }
+
+    .item-image{
+        height: 200px;
+    }
+
+    .gallery-img{
+        height: 400px;
+    }
+
+    .name{
+        font-size: 18px;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .item-container{
+        height: 300px;
+    }
+
+    .menu{
+        padding: 10px;
+    }
+
+    .menu a{
+        font-size: 10px;
+    }
+
+    .fimg{
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(336deg) brightness(101%);
+        margin-right: 10%;
+        height: 20px;
+        width: 20px;
+    }
+
+    .element a{
+        font-size: 10px;
+    }
+
+    .copyright{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+}
+
+
